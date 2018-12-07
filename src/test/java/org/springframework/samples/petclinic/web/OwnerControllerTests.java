@@ -47,7 +47,7 @@ public class OwnerControllerTests {
     public void testInitCreationForm() throws Exception {
         mockMvc.perform(get("/owners/new"))
             .andExpect(status().isOk())
-            .andExpect(model().attributeExists("owner1"))
+            .andExpect(model().attributeExists("owner"))
             .andExpect(view().name("owners/createOrUpdateOwnerForm"));
     }
 
